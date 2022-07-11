@@ -192,6 +192,11 @@ section{
 /**add section**/
 
 .add{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+}
+.add1{
     background-color: #f6f6f7;
     text-align: center;
     padding: 5px 0;
