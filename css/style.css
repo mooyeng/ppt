@@ -660,6 +660,11 @@ th,td {padding:10px}
 tr:nth-child(odd) {
     background-color: #f2f2f2      
 }
+
+.fixed-posi {
+    height:100%;
+    position:fixed;
+}
    
 
 /**Back to top section end**/
@@ -762,16 +767,6 @@ section.quiz_main{
 /**question page css end**/
 
 
-.nav-content{
-    overflow-y: scroll;
-    overscroll-behavior: contain;
-    
-}
-.other-content {
-    overscroll-behavior: none;
-    overflow: hidden;
-    
-  }
 
 /**Responsive css**/
 
