@@ -763,12 +763,13 @@ section.quiz_main{
 
 
 .nav-content{
-    overflow: scroll;
+    overflow-y: scroll;
     overscroll-behavior: contain;
     
 }
 .other-content {
     overscroll-behavior: none;
+    overflow: hidden;
     
   }
 
