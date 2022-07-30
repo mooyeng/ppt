@@ -765,9 +765,11 @@ section.quiz_main{
 .nav-content{
     overflow: scroll;
     overscroll-behavior: contain;
+    
 }
 .other-content {
     overscroll-behavior: none;
+    
   }
 
 /**Responsive css**/
