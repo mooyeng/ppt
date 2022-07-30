@@ -761,6 +761,11 @@ section.quiz_main{
 }
 /**question page css end**/
 
+
+.nav-content{
+    overscroll-behavior: contain;
+}
+
 /**Responsive css**/
 
 @media only screen and (max-width: 991px){
