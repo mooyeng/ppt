@@ -664,6 +664,7 @@ tr:nth-child(odd) {
 .fixed-posi {
     height:90vh;
     position:fixed;
+    overflow-y: scroll;
 }
    
 
