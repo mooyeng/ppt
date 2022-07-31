@@ -662,10 +662,16 @@ tr:nth-child(odd) {
 }
 
 .fixed-posi {
-    height:90vh;
+    height:100vh;
     position:fixed;
     overflow-y: scroll;
 }
+
+.left{
+    
+    height: 100vh;
+    overflow-y: scroll;
+  }
    
 
 /**Back to top section end**/
