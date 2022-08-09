@@ -150,9 +150,7 @@
                                   </div>
                               </div>
                               <div class="score">
-                                <div class="prev">
-                                    <button type="button" onclick="prev()" id="button">Previous</button>
-                                </div>
+                                
                                 <div class="next">
                                   <button type="button" onclick="next()" id="button">Next</button>
                               </div>
@@ -579,10 +577,7 @@
         this.index++;
         this.load();
       },
-      prev:function(){
-        this.index--;
-        this.load();
-      },
+    
 
       check:function(ele){
                       
@@ -591,7 +586,7 @@
         if(id[id.length-1]==this.questions[this.index].answer){
           this.score++;
           ele.className="correct";
-          //ele.innerHTML="Correct";
+          ele.innerHTML="Correct";
           
           this.scoreCard();
         }
@@ -600,7 +595,11 @@
           ele.innerHTML="Wrong";
         }
       },
-    
+      notClickAble:function(){
+        for(let i=0;i<ul.children.length;i++){
+          ul.children[i].style.pointerEvents="none";
+        }
+      },
 
       clickAble:function(){
         for(let i=0;i<ul.children.length;i++){
@@ -629,10 +628,7 @@
       app.clickAble();
     } 
 
-    function  prev(){
-      app.prev();
-      app.clickAble();
-    } 
+    
     </script>
    
   </body>
