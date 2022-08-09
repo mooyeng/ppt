@@ -199,7 +199,7 @@
             </div>
           </div>
           <div class="buttonArea">
-            <button type="button" onclick="next()" id="button">Next</button>
+            <button type="button" onclick="next()" id="button"> Next </button>
           </div>
         </div>
 
@@ -324,8 +324,8 @@
     let questions = [
 
       {
-
-        qH: '[1-4]다음 질문에 답하십시오.',
+        id: '1',
+        qH: '[1-4]다음 질문에 답하십시오. ',
         q: '1. 다음을 읽고 맞지않는 것을 고르십시오.',
         qS: '',
         img: '<img src="https://firebasestorage.googleapis.com/v0/b/eps-online-practice.appspot.com/o/DevPracrice1%2F1.webp?alt=media&token=a6046dee-f74c-497c-9ae2-b8be63a75a61" style = "max-width: 100%;"</img>',
@@ -339,6 +339,7 @@
       },
 
       {
+        id: '2',
         qH: '[1-4]다음 질문에 답하십시오.',
         q: '2. 퇴근 후에 국제아파트 에 살고있는 친구네집을 찾아 가려고합니다. 지하철 역에서 몇번 출구로 나가야합니까?',
         qS: '',
@@ -353,6 +354,7 @@
       },
 
       {
+        id: '3',
         qH: '[17-20] 빈칸에 들어갈 가장 알맞은 것을 고르십시오.',
         q: '20. 돼지를 키우는 곳을 ________ (이)라고합니다. ',
         qS: '',
@@ -378,10 +380,8 @@
 
       //check ans
       if (user_answer == questions[question_count].answer) {
-
         point += 2.5;
         sessionStorage.setItem('points', point);
-
       }
 
       if (question_count == questions.length - 1) {
@@ -390,7 +390,7 @@
         clearInterval(myTime);
         //location.href = "00score.html";
         openPopUp();
-        return;
+
 
       }
 
@@ -427,7 +427,7 @@
 
       let img = document.getElementById("url");
       img.innerHTML = questions[count].img;
-      img.style.maxHeight = '50vh';
+      
 
 
       let opsns = document.getElementById("options");
