@@ -127,7 +127,7 @@
         Your Score is: <span class="points"></span> Out of 100.
       </div>
       <div class="timeTaken">
-        Total Time: <span class="time_taken">0 minutes second</span>
+        Total Time: <span class="time_taken"></span>
       </div>
       <ul class="row btnRow">
         <li class="dismiss-btn">
@@ -185,11 +185,11 @@
                   <div class="answerArea">
                     <div id="options">
                       <!-- <ul class="option_group">
-                                            <li class="option" id="opt1">option1</li>
-                                            <li class="option" id="opt2">option2</li>
-                                            <li class="option" id="opt3">option3</li>
-                                            <li class="option" id="opt4">option4</li>
-                                        </ul> -->
+                        <li class="option" id="opt1">option1</li>
+                        <li class="option" id="opt2">option2</li>
+                        <li class="option" id="opt3">option3</li>
+                        <li class="option" id="opt4">option4</li>
+                      </ul> -->
                     </div>
                   </div>
                 </div>
@@ -310,7 +310,6 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="js/end.js"></script>
   <script type="text/javascript" src="js/timer.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -324,49 +323,49 @@
     let questions = [
 
       {
-        id:'1',
-        qH:'[1-4]다음 질문에 답하십시오. ',
-        q:'1. 다음을 읽고 맞지않는 것을 고르십시오.',
-        qS:'',
-        img:'<img src="https://firebasestorage.googleapis.com/v0/b/eps-online-practice.appspot.com/o/DevPracrice1%2F1.webp?alt=media&token=a6046dee-f74c-497c-9ae2-b8be63a75a61" style = "max-width: 100%;"</img>',
-        options:[
+        id: '1',
+        qH: '[1-4]다음 질문에 답하십시오. ',
+        q: '1. 다음을 읽고 맞지않는 것을 고르십시오.',
+        qS: '',
+        img: '<img src="https://firebasestorage.googleapis.com/v0/b/eps-online-practice.appspot.com/o/DevPracrice1%2F1.webp?alt=media&token=a6046dee-f74c-497c-9ae2-b8be63a75a61" style = "max-width: 100%;"</img>',
+        options: [
           '설악산으로가을여행을갑니다.',
           '여행하루전까지신청해야합니다.',
           '여행을하려면 5만원을내야합니다.',
           '토요일아침에시청앞에서출발합니다.'
         ],
-        answer:'여행하루전까지신청해야합니다.'
+        answer: '여행하루전까지신청해야합니다.'
       },
 
       {
-        id:'2',
-        qH:'[1-4]다음 질문에 답하십시오.',
-        q:'2. 퇴근 후에 국제아파트 에 살고있는 친구네집을 찾아 가려고합니다. 지하철 역에서 몇번 출구로 나가야합니까?',
-        qS:'',
-        img:'<img src="https://firebasestorage.googleapis.com/v0/b/eps-online-practice.appspot.com/o/DevPracrice1%2F2.webp?alt=media&token=54eb66b5-1df1-4c4e-a3c0-db18a6edc799" style = "max-width: 80%;"</img>',
-        options:[
+        id: '2',
+        qH: '[1-4]다음 질문에 답하십시오.',
+        q: '2. 퇴근 후에 국제아파트 에 살고있는 친구네집을 찾아 가려고합니다. 지하철 역에서 몇번 출구로 나가야합니까?',
+        qS: '',
+        img: '<img src="https://firebasestorage.googleapis.com/v0/b/eps-online-practice.appspot.com/o/DevPracrice1%2F2.webp?alt=media&token=54eb66b5-1df1-4c4e-a3c0-db18a6edc799" style = "max-width: 80%;"</img>',
+        options: [
           '번출구',
           '번출구',
           '번출구',
           '번출구'
         ],
-        answer:'번출구'
+        answer: '번출구'
       },
 
       {
-        id:'3',
-        qH:'[17-20] 빈칸에 들어갈 가장 알맞은 것을 고르십시오.',
-        q:'20. 돼지를 키우는 곳을 ________ (이)라고합니다. ',
-        qS:'',
-        img:'',
-        aud:'',
-        options:[
+        id: '3',
+        qH: '[17-20] 빈칸에 들어갈 가장 알맞은 것을 고르십시오.',
+        q: '20. 돼지를 키우는 곳을 ________ (이)라고합니다. ',
+        qS: '',
+        img: '',
+        aud: '',
+        options: [
           '양계장',
           '외양간',
           '작업장',
           '돼지우리'
         ],
-        answer:'돼지우리'
+        answer: '돼지우리'
       },
 
     ];
@@ -382,7 +381,7 @@
       if (user_answer == questions[question_count].answer) {
         point += 2.5;
         document.querySelector(".points").innerHTML = point;
-       // sessionStorage.setItem('points', point);
+        // sessionStorage.setItem('points', point);
       }
 
       if (question_count == questions.length - 1) {
@@ -393,7 +392,7 @@
         openPopUp();
 
 
-        
+
       }
 
       question_count++;
@@ -429,7 +428,7 @@
 
       let img = document.getElementById("url");
       img.innerHTML = questions[count].img;
-      
+
 
 
       let opsns = document.getElementById("options");
