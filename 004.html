@@ -28,7 +28,7 @@
   <!--Nav Section-->
 
 
-  <nav id="navigation" class="navbar navbar-expand-lg fixed-top">
+  <!-- <nav id="navigation" class="navbar navbar-expand-lg fixed-top">
 
     <div class="container align-items-stretch">
 
@@ -106,7 +106,7 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
   <!--Nav Section end-->
 
@@ -146,16 +146,16 @@
 
   <!--Popup Section end -->
 
-  <section class="quiz">
+  <section class="quiz prevent-select">
     <div class="container">
       <div class="row content">
         <div class="box">
           <div class="title">EPS TOPIK Quiz</div>
 
           <div class="header">
-            <div class="scoreBox">1/40</div>
+            <div class="scoreBox"><span class="qtnNo">1</span>/40</div>
             <div class="menuIcon">
-              <i class="fa fa-th fa-2x" aria-hidden="true"></i>
+              <a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
             </div>
             <div class="timerBox"><span class="time"></span></div>
           </div>
@@ -218,59 +218,7 @@
 
   <!--Footer Section -->
   <footer id="footer">
-    <div class="footer_top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 footer_contact">
-
-
-            <h3><span class="first-letter">P</span><span class="first-letter">P</span><span
-                class="first-letter">T</span><br>
-              </h>
-              <p>
-                <strong>Email:</strong> info@ppt.com.np
-              </p>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer_links">
-            <h4>Quick Links</h4>
-            <ul>
-              <li>
-                <i class="fa fa-chevron-right"></i>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <i class="fa fa-chevron-right"></i>
-                <a href="grammer.html">Grammer</a>
-              </li>
-              <li>
-                <i class="fa fa-chevron-right"></i>
-                <a href="about.html">About Us</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer_links">
-            <h4>Important Links</h4>
-            <ul>
-              <li>
-                <i class="fa fa-chevron-right"></i>
-                <a href="#" target="_blank">.......</a>
-              </li>
-              <li>
-                <i class="fa fa-chevron-right"></i>
-                <a href="#">........</a>
-              </li>
-              <li>
-                <i class="fa fa-chevron-right"></i>
-                <a href="#">.........</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     <div class="container d-md-flex py-4">
       <div class="mr-md-auto text-center text-md-left">
         <div class="copyright">
@@ -372,6 +320,7 @@
 
     let question_count = 0;
     let point = 0;
+    let qId = 0;
 
     function next() {
 
@@ -380,13 +329,16 @@
       //check ans
       if (user_answer == questions[question_count].answer) {
         point += 2.5;
+        qId += 1;
         document.querySelector(".points").innerHTML = point;
+        document.querySelector(".qtnNo").innerHTML =qId + 1;
         // sessionStorage.setItem('points', point);
+       
       }
 
       if (question_count == questions.length - 1) {
 
-        sessionStorage.setItem('time', `${minutes} Minutess and ${seconds} Seconds.`)
+        //sessionStorage.setItem('time', `${minutes} Minutess and ${seconds} Seconds.`)
         clearInterval(myTime);
         //location.href = "00score.html";
         openPopUp();
@@ -417,6 +369,7 @@
 
 
     function show(count) {
+
       let qHead = document.getElementById("questionHead");
       qHead.innerHTML = "<p>" + questions[count].qH + "</p>";
 
@@ -441,6 +394,7 @@
       </ul>
       
       `;
+
       toggleActive();
 
     }

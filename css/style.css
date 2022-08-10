@@ -890,7 +890,7 @@ tr:nth-child(odd) {
     width: 350px;
     height: 280px;
     padding: 30px 20px;
-    background: #3d5b99;
+    background: #2c4984;
     backdrop-filter: blur(10px);
     border-radius: 10px;
     box-sizing: border-box;
@@ -929,21 +929,21 @@ tr:nth-child(odd) {
 .popup-box .greeting {
     margin: 5px 0px;
     font-size: 25px;
-    color: #000000;
+    color: #fff;
     font-weight: 600;
 }
 
 .popup-box .score {
     margin: 5px 0px;
     font-size: 16px;
-    color: #000000;
+    color: #fff;
     font-weight: 500;
 }
 
 .popup-box .timeTaken {
     margin: 5px 0px;
     font-size: 16px;
-    color: #000000;
+    color: #fff;
     font-weight: 500;
 }
 
