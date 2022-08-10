@@ -717,7 +717,9 @@ tr:nth-child(odd) {
 /**Back to top section end**/
 
 /**question page css start**/
-
+.quiz {
+    padding: 10px 5px;
+}
 .quiz_main {
     padding: 20px 0;
     overflow: hidden;
@@ -761,26 +763,26 @@ tr:nth-child(odd) {
     border: 1px solid #444;
 }
 
-.menuIcon {
+.backBtn {
     padding: 5px 7.5px;
     border-radius: 100px;
     border: 0px solid transparent;
 }
 
 
-#questionHead h2 {
+#questionHead p {
     font-size: 16px;
     font-style: italic;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
-#question h2 {
+#question p {
     font-size: 15px;
     margin-bottom: 8px;
 }
 
-#subQuestion h2 {
+#subQuestion p {
     font-size: 15px;
     margin-bottom: 8px;
 }
@@ -830,6 +832,8 @@ tr:nth-child(odd) {
     color: #fff !important;
 }
 
+
+
 .buttonArea {
     display: flex;
     background-color: transparent;
@@ -865,11 +869,11 @@ tr:nth-child(odd) {
 
 }
 
-.popup-screen{
-    
+.popup-screen {
+
     z-index: 9999999;
     position: fixed;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     width: 100%;
     height: 100vh;
@@ -878,11 +882,11 @@ tr:nth-child(odd) {
     align-items: center;
     visibility: hidden;
     transition: 0.5s ease;
-    
+
     transition-property: visibility;
 }
 
-.popup-screen.active{
+.popup-screen.active {
     visibility: visible;
 }
 
@@ -900,10 +904,11 @@ tr:nth-child(odd) {
     opacity: 0;
     top: -200%;
     transform: translate(-50% -50%) scale(0.5);
-    transition: opacity 300ms ease-in-out, top 1000ms ease-in-out, transform 1000ms ease-in-out ;
+    transition: opacity 300ms ease-in-out, top 1000ms ease-in-out, transform 1000ms ease-in-out;
 
 }
-.popup-box.active{
+
+.popup-box.active {
     opacity: 1;
     top: 50%;
     transform: translate(-50% -50%) scale(1);

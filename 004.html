@@ -146,16 +146,16 @@
 
   <!--Popup Section end -->
 
-  <section class="quiz prevent-select">
+  <div class="quiz prevent-select">
     <div class="container">
       <div class="row content">
         <div class="box">
-          <div class="title">EPS TOPIK Quiz</div>
+          <div class="title">EPS-TOPIK Practice</div>
 
           <div class="header">
-            <div class="scoreBox"><span class="qtnNo">1</span>/40</div>
-            <div class="menuIcon">
-              <a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+            <!-- <div class="scoreBox"></div> -->
+            <div class="backBtn">
+              <a href="index.html"><i class='fa fa-reply-all' style='font-size:16px'></i> Back to Home</a>
             </div>
             <div class="timerBox"><span class="time"></span></div>
           </div>
@@ -208,7 +208,7 @@
 
     </div>
     </div>
-  </section>
+  </div>
   <!--Quiz Section end-->
 
 
@@ -320,7 +320,7 @@
 
     let question_count = 0;
     let point = 0;
-    let qId = 0;
+    let qNo = 1;
 
     function next() {
 
@@ -329,11 +329,10 @@
       //check ans
       if (user_answer == questions[question_count].answer) {
         point += 2.5;
-        qId += 1;
+
         document.querySelector(".points").innerHTML = point;
-        document.querySelector(".qtnNo").innerHTML =qId + 1;
+        
         // sessionStorage.setItem('points', point);
-       
       }
 
       if (question_count == questions.length - 1) {
@@ -343,14 +342,17 @@
         //location.href = "00score.html";
         openPopUp();
 
-
-
+        
       }
 
       question_count++;
       show(question_count);
 
     }
+
+  
+    
+
     function openPopUp() {
       document.getElementById("button").addEventListener("click", function () {
         document.getElementsByClassName("popup-box")[0].classList.add("active");
@@ -382,6 +384,8 @@
       let img = document.getElementById("url");
       img.innerHTML = questions[count].img;
 
+      
+
 
 
       let opsns = document.getElementById("options");
@@ -394,6 +398,8 @@
       </ul>
       
       `;
+
+     
 
       toggleActive();
 
