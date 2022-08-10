@@ -10,33 +10,33 @@ $(window).scroll(function () {
   }
 });
 
-// $(function () {
+$(function () {
 
-//   let totaTime = 1500;
-//   let min = 0;
-//   let sec = 0;
-//   let counter = 0;
+  let totaTime = 1500;
+  let min = 0;
+  let sec = 0;
+  let counter = 0;
 
-//   let timer = setInterval(function () {
-//     counter++;
-//     min = Math.floor((totaTime - counter) / 60);
-//     sec = totaTime - (min * 60) - counter;
+  let timer = setInterval(function () {
+    counter++;
+    min = Math.floor((totaTime - counter) / 60);
+    sec = totaTime - (min * 60) - counter;
 
-//     let formatted_sec = sec < 10 ? `0${sec}` : `${sec}`;
-//     let formatted_min = min < 10 ? `0${min}` : `${min}`;
+    let formatted_sec = sec < 10 ? `0${sec}` : `${sec}`;
+    let formatted_min = min < 10 ? `0${min}` : `${min}`;
 
-//     $(".timerBox span").text(formatted_min + ":" + formatted_sec);
+    $(".timerBox span").text(formatted_min + ":" + formatted_sec);
 
-//     if (counter == totaTime) {
-//       clearInterval(timer);
-//      // openPopUp();
+    if (counter == totaTime) {
+      clearInterval(timer);
+     // openPopUp();
     
-//     }
+    }
 
-//   }, 1000);
+  }, 1000);
 
 
-// });
+});
 
 
 

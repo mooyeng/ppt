@@ -367,7 +367,7 @@
           '돼지우리'
         ],
         answer:'돼지우리'
-      }
+      },
 
     ];
 
@@ -381,7 +381,8 @@
       //check ans
       if (user_answer == questions[question_count].answer) {
         point += 2.5;
-        sessionStorage.setItem('points', point);
+        document.querySelector(".points").innerHTML = point;
+       // sessionStorage.setItem('points', point);
       }
 
       if (question_count == questions.length - 1) {
@@ -418,13 +419,13 @@
 
     function show(count) {
       let qHead = document.getElementById("questionHead");
-      qHead.innerHTML = "<h2>" + questions[count].qH + "</h2>";
+      qHead.innerHTML = "<p>" + questions[count].qH + "</p>";
 
       let ques = document.getElementById("question");
-      ques.innerHTML = "<h2>" + questions[count].q + "</h2>";
+      ques.innerHTML = "<p>" + questions[count].q + "</p>";
 
       let qSub = document.getElementById("subQuestion");
-      qSub.innerHTML = "<h2>" + questions[count].qS + "</h2>";
+      qSub.innerHTML = "<p>" + questions[count].qS + "</p>";
 
       let img = document.getElementById("url");
       img.innerHTML = questions[count].img;
