@@ -157,7 +157,7 @@
             <div class="backBtn">
               <a href="index.html"><i class='fa fa-reply-all' style='font-size:16px'></i> Back to Home</a>
             </div>
-            <div class="timerBox"><span class="time"></span></div>
+            <div class="timerBox"><span class="time">0</span></div>
           </div>
 
           <div class="quiz_main" id="questions">
@@ -555,7 +555,7 @@
 
     let question_count = 0;
     let point = 0;
-    
+
 
     function next() {
 
@@ -584,7 +584,6 @@
       show(question_count);
 
     }
-
     function openPopUp() {
       document.getElementById("button").addEventListener("click", function () {
         document.getElementsByClassName("popup-box")[0].classList.add("active");
@@ -594,7 +593,7 @@
     }
 
     document.getElementById("reTake-popup-btn").addEventListener("click", function () {
-      location.href = "004.html";
+      location.href = "001.html";
     });
     document.getElementById("dismiss-popup-btn").addEventListener("click", function () {
       location.href = "index.html";

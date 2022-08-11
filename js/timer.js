@@ -12,9 +12,8 @@ let myTime = setInterval(function(){
         minutes++;
         seconds = 0;
     }
-
-    let formatted_sec = seconds < 10 ? `0${seconds}` : `${seconds}`;
-    let formatted_min = minutes < 10 ? `0${minutes}` : `${minutes}`;
+    // let formatted_sec = seconds < 10 ? `0${seconds}` : `${seconds}`;
+    // let formatted_min = minutes < 10 ? `0${minutes}` : `${minutes}`;
 
     //$(".timerBox span").text(formatted_min + ":" + formatted_sec);
     document.querySelector(".time_taken").innerHTML = `${minutes} Minutes ${seconds} Seconds.`;

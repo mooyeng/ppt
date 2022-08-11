@@ -157,7 +157,7 @@
             <div class="backBtn">
               <a href="index.html"><i class='fa fa-reply-all' style='font-size:16px'></i> Back to Home</a>
             </div>
-            <div class="timerBox"><span class="time"></span></div>
+            <div class="timerBox"><span class="time">0</span></div>
           </div>
 
           <div class="quiz_main" id="questions">
@@ -207,7 +207,7 @@
       </div>
 
     </div>
-    </div>
+  </div>
   </div>
   <!--Quiz Section end-->
 
@@ -218,7 +218,7 @@
 
   <!--Footer Section -->
   <footer id="footer">
-    
+
     <div class="container d-md-flex py-4">
       <div class="mr-md-auto text-center text-md-left">
         <div class="copyright">
@@ -331,7 +331,7 @@
         point += 2.5;
 
         document.querySelector(".points").innerHTML = point;
-        
+
         // sessionStorage.setItem('points', point);
       }
 
@@ -342,17 +342,13 @@
         //location.href = "00score.html";
         openPopUp();
 
-        
+
       }
 
       question_count++;
       show(question_count);
 
     }
-
-  
-    
-
     function openPopUp() {
       document.getElementById("button").addEventListener("click", function () {
         document.getElementsByClassName("popup-box")[0].classList.add("active");
@@ -362,7 +358,7 @@
     }
 
     document.getElementById("reTake-popup-btn").addEventListener("click", function () {
-      location.href = "004.html";
+      location.href = "002.html";
     });
     document.getElementById("dismiss-popup-btn").addEventListener("click", function () {
       location.href = "index.html";
@@ -384,7 +380,7 @@
       let img = document.getElementById("url");
       img.innerHTML = questions[count].img;
 
-      
+
 
 
 
@@ -399,7 +395,7 @@
       
       `;
 
-     
+
 
       toggleActive();
 

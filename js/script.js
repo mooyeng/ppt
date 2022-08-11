@@ -15,7 +15,7 @@ $(function () {
   let totaTime = 1500;
   let min = 0;
   let sec = 0;
-  let counter = 0;
+  let counter = 00;
 
   let timer = setInterval(function () {
     counter++;
@@ -29,12 +29,15 @@ $(function () {
 
     if (counter == totaTime) {
       clearInterval(timer);
-     // openPopUp();
+      
+      clearInterval(myTime);
+
+      document.getElementsByClassName("popup-box")[0].classList.add("active");
+      document.getElementsByClassName("popup-screen")[0].classList.add("active");
     
     }
 
   }, 1000);
-
 
 });
 
