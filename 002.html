@@ -27,7 +27,6 @@
 <body>
   <!--Nav Section-->
 
-
   <!-- <nav id="navigation" class="navbar navbar-expand-lg fixed-top">
 
     <div class="container align-items-stretch">
@@ -110,8 +109,6 @@
 
   <!--Nav Section end-->
 
-
-
   <!--Quiz Section -->
 
   <!--Popup Section -->
@@ -124,7 +121,7 @@
         Congratulations!!
       </div>
       <div class="score">
-        Your Score is: <span class="points"></span> Out of 100.
+        Your Score is: <span class="points"></span> Out of 50.
       </div>
       <div class="timeTaken">
         Total Time: <span class="time_taken"></span>
@@ -177,8 +174,6 @@
 
                     </div>
                     <div id="url" class="image"></div>
-
-
                   </div>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0">
@@ -194,27 +189,17 @@
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
           <div class="buttonArea">
             <button type="button" onclick="next()" id="button"> Next </button>
           </div>
         </div>
-
-
       </div>
-
     </div>
   </div>
   </div>
   <!--Quiz Section end-->
-
-
-
-
-
 
   <!--Footer Section -->
   <footer id="footer">
@@ -248,8 +233,6 @@
 
   <!--Back to top Section end-->
 
-
-
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -271,56 +254,308 @@
     let questions = [
 
       {
-        id: '1',
-        qH: '[1-4]다음 질문에 답하십시오. ',
-        q: '1. 다음을 읽고 맞지않는 것을 고르십시오.',
-        qS: '',
-        img: '<img src="https://firebasestorage.googleapis.com/v0/b/eps-online-practice.appspot.com/o/DevPracrice1%2F1.webp?alt=media&token=a6046dee-f74c-497c-9ae2-b8be63a75a61" style = "max-width: 100%;"</img>',
-        options: [
-          '설악산으로가을여행을갑니다.',
-          '여행하루전까지신청해야합니다.',
-          '여행을하려면 5만원을내야합니다.',
-          '토요일아침에시청앞에서출발합니다.'
-        ],
-        answer: '여행하루전까지신청해야합니다.'
-      },
-
-      {
-        id: '2',
-        qH: '[1-4]다음 질문에 답하십시오.',
-        q: '2. 퇴근 후에 국제아파트 에 살고있는 친구네집을 찾아 가려고합니다. 지하철 역에서 몇번 출구로 나가야합니까?',
-        qS: '',
-        img: '<img src="https://firebasestorage.googleapis.com/v0/b/eps-online-practice.appspot.com/o/DevPracrice1%2F2.webp?alt=media&token=54eb66b5-1df1-4c4e-a3c0-db18a6edc799" style = "max-width: 80%;"</img>',
-        options: [
-          '번출구',
-          '번출구',
-          '번출구',
-          '번출구'
-        ],
-        answer: '번출구'
-      },
-
-      {
-        id: '3',
-        qH: '[17-20] 빈칸에 들어갈 가장 알맞은 것을 고르십시오.',
-        q: '20. 돼지를 키우는 곳을 ________ (이)라고합니다. ',
+        qH: '[1-2] 다음 글을 읽고 무엇에 대한 글인지 고르십시오.',
+        q: '1. 여러분! 김치찌개 만드는 법을 알려 드릴게요. 아주 간단해요. 재료는 김치와 돼지고 기만 있으면 돼요. 먼저 돼지고기를 볶으세요. 고기가 익으면 김치를 넣어서 같이 조 금 더 볶으세요. 그 후에 물을 붓고 끓이면 돼요. 돼지고기 대신 참치나 소시지를 넣 어도 맛이 있어요. ',
         qS: '',
         img: '',
         aud: '',
         options: [
-          '양계장',
-          '외양간',
-          '작업장',
-          '돼지우리'
+          '김치 만들기',
+          '김치찌개 만들기',
+          ' 맛있는 김치 고르기',
+          '음식 재료 싸게 사기'
         ],
-        answer: '돼지우리'
+        answer: '김치 만들기'
       },
 
+      {
+        qH: '[1-2] 다음 글을 읽고 무엇에 대한 글인지 고르십시오.',
+        q: '2. 농사 일을 할 때에는 작업이 종류에 맞게 도구를 사용하면 일을 효율적으로 할 수 있습니다. 땅을 깊이 팔 때에는 삽이 좋지만 파종을 하기 위해 얕게 팔 때에는 괭이가 좋습니다. ',
+        qS: '',
+        img: '',
+        aud: '',
+        options: [
+          '농기구의 용도 ',
+          '수공구의 용도 ',
+          '어업 도구 이용도  ',
+          '운반 도구의 용도 '
+        ],
+        answer: '운반 도구의 용도 '
+      },
+
+      {
+        qH: '[3-4] 다음 설명에 알맞은 어휘를 고르십시오.',
+        q: '3. 기본 시간 이상 일하면 시급의 50%를 계산하여 추가로 지급하는 임금을 말 입니다.',
+        qS: '',
+        img: '',
+        aud: '',
+        options: [
+          '연장 수당 ',
+          '상여금 ',
+          ' 시급 ',
+          '일급 '
+        ],
+        answer: '상여금 '
+      },
+
+      {
+        qH: '[3-4] 다음 설명에 알맞은 어휘를 고르십시오.',
+        q: '4. 3년의 취업 활동 기간이 만료가 되는 경우 사업주와 1 년 10 개월 이하의 근로 계약을 맺어 취업 활동 기간을 연장할 수 있습니다. ',
+        qS: '',
+        img: '',
+        aud: '',
+        options: [
+          '재고용 ',
+          '업종별 특성 ',
+          ' 변경 허가 ',
+          '외국인 등록 '
+        ],
+        answer: ' 변경 허가 '
+      },
+
+      {
+        qH: '[5-6] 다음 질문에 답하십시오.',
+        q: '5. 이 글의 ‘저’ 는 누구입니까?',
+        qS: '저는 중국 사람인데 2년 전에 한국 남자하고 결혼했습니다. 남편의 어머니인 시어머 니는 저한테 한국 음식 만드는 법을 가르쳐 주시고 집안일도 많이 도와 주십니다. 시 어머니는 저한테 좋은 한국말 선생님이기도 합니다. 저는 배운 것을 자꾸 잊어버리지 만 시어머니는 친절하게 또 가르쳐 주십니다. 사람들은 저와 제 시어머니를 보고“이 렇게 사이가 좋은 시어머니와 며느리는 처음 봤어요.”라고 말합니다.',
+        img: '',
+        aud: '',
+        options: [
+          '시어머니 ',
+          '한국말 선생님 ',
+          ' 중국인 며느리 ',
+          ' 남편의 어머니 '
+        ],
+        answer: ' 중국인 며느리 '
+      },
+
+      {
+        qH: '[5-6] 다음 질문에 답하십시오.',
+        q: '6. 이 글의 내용과 같은 것을 고르십시오.',
+        qS: '김훈 씨는 어제 저녁에 친구들과 같이 맥주를 마시고 배탈이 났습니다. 시간이 늦어 서 병원에 가지도 못하고 밤새 혼자서 앓았습니다. 아마 저녁을 먹지 않고 빈 속에 맥 주를 먹어서 배탈이 난 것 같습니다. 설사를 많이 해서 몸에 기운이 하나도 없습니다. 힘들지만 아침에 일어나서 공장에 일하러 나갔습니다. 하루 종일 너무 힘이 들었습니 다. 다음부터는 절대로 빈 속에 술을 마시지 않기로 했습니다. ',
+        img: '',
+        aud: '',
+        options: [
+          '김훈 씨는 배탈이 났습니다. ',
+          '김훈 씨는 오늘 결근했습니다. ',
+          ' 김훈 씨는 감기에 걸렸습니다. ',
+          ' 김훈 씨는 병원에 갔다 왔습니다.'
+        ],
+        answer: '김훈 씨는 오늘 결근했습니다. '
+      },
+
+      {
+        qH: '[7-8] 다음 질문에 답하십시오.',
+        q: '7. 다음 단어와 관계 있는 것은 무엇입니까?',
+        qS: '답이 / 성격 / 입맛 / 주사 ',
+        img: '',
+        aud: '',
+        options: [
+          '맞다 ',
+          '듣다 ',
+          '내다  ',
+          ' 하다'
+        ],
+        answer: '듣다 '
+      },
+
+      {
+        qH: '[7-8] 다음 질문에 답하십시오.',
+        q: '8. 다음 단어의 비슷한 말은 무엇입니까?',
+        qS: '교과서',
+        img: '',
+        aud: '',
+        options: [
+          ' 보관하다',
+          '법칙 ',
+          ' 까만 색 ',
+          '학교 책'
+        ],
+        answer: '학교 책'
+      },
+
+      {
+        qH: '[9-10] 빈칸에 들어갈 가장 알맞은 것을 고르십시오.',
+        q: '9. 가 : 다음주 주말에 방을 예약하고 싶은데요.이틀 묵을 거예요.<br>나 : _________________<br>가 : 김영수예요. ',
+        qS: '',
+        img: '',
+        aud: '',
+        options: [
+          '댁이 어디세요? ',
+          '연세가 어떻게 되세요? ',
+          '성함이 어떻게 되세요?',
+          '연락처가 어떻게 되세요? '
+        ],
+        answer: '성함이 어떻게 되세요?'
+      },
+
+      {
+        qH: '[9-10] 빈칸에 들어갈 가장 알맞은 것을 고르십시오.',
+        q: '10. 운전할 때는 ________ 안 됩니다. 너무 빨리 달리면 사고가 나기 쉽기 때문입니 다. 또 정해진 속도 이상으로 달리면 벌금을 내야 하는 경우도 생깁니다. ',
+        qS: '',
+        img: '',
+        aud: '',
+        options: [
+          '금연하면',
+          '흡연하면',
+          '과속하면',
+          '과식하면'
+        ],
+        answer: '과속하면'
+      },
+
+      {
+        qH: '[11-14] 다음 질문에 답하십시오.',
+        q: '11. 다음 그림에 대한 설명으로 맞는 것을 고르십시오.',
+        qS: '',
+        img: '<img src="https://firebasestorage.googleapis.com/v0/b/eps-online-practice.appspot.com/o/DevPractice2%2F11.webp?alt=media&token=e23569fc-3f26-4169-9753-277ddd8a2515" style = "max-width: 100%;"></img> ',
+        aud: '',
+        options: [
+          '과일을 따고 있습니다.',
+          '과일을 팔고 있습니다. ',
+          ' 나무에 물을 주고 있습니다. ',
+          '나뭇가지를 자르고 있습니다. '
+        ],
+        answer: '과일을 따고 있습니다.'
+      },
+
+      {
+        qH: '[11-14] 다음 질문에 답하십시오.',
+        q: '12. 이 광고에서 알 수 없는 것은 무엇입니까?',
+        qS: '',
+        img: '<img src="https://firebasestorage.googleapis.com/v0/b/eps-online-practice.appspot.com/o/DevPractice2%2F12.webp?alt=media&token=acc712ff-97a8-4777-8d33-4b5d5cebb4c7" style = "max-width: 100%;"></img>',
+        aud: '',
+        options: [
+          ' 여행 기간 ',
+          '물어볼 곳 ',
+          ' 여행 가격 ',
+          '여행사가 있는 곳'
+        ],
+        answer: '여행사가 있는 곳'
+      },
+
+      {
+        qH: '[11-14] 다음 질문에 답하십시오.',
+        q: '13. 이 표지는 무슨 뜻입니까?',
+        qS: '',
+        img: '<img src="https://firebasestorage.googleapis.com/v0/b/eps-online-practice.appspot.com/o/DevPractice2%2F13.webp?alt=media&token=aff063e7-99cb-4366-a5f3-d85461655839" style = "max-width: 100%;"></img> ',
+        aud: '',
+        options: [
+          ' 이곳의 물을 마시면 위험합니다. ',
+          '이곳의 물을 마셔도 괜찮습니다. ',
+          '이곳에서 수영을 하면 위험합니다.  ',
+          '이곳에서 수영을 해도 괜찮습니다.'
+        ],
+        answer: '이곳에서 수영을 해도 괜찮습니다.'
+      },
+
+      {
+        qH: '[11-14] 다음 질문에 답하십시오.',
+        q: '14. 다음 중“오른쪽 위로 올라가십시오”를 뜻하는 표지판은 어느 것입니까?',
+        qS: '',
+        img: '<img src="https://firebasestorage.googleapis.com/v0/b/eps-online-practice.appspot.com/o/DevPractice2%2F14.webp?alt=media&token=18a3e3dd-e508-402a-9bf1-62c21e2fcb9e" style = "max-width: 100%;"></img>',
+        aud: '',
+        options: [
+          'A',
+          'B',
+          'C',
+          'D'
+        ],
+        answer: 'D'
+      },
+
+      {
+        qH: ' [15-16] 다음 그림을 보고 맞는 단어나 문장을 고르십시오.',
+        q: '15.<img src="https://firebasestorage.googleapis.com/v0/b/eps-online-practice.appspot.com/o/DevPractice2%2F15.webp?alt=media&token=c2ef4319-d012-4927-87ba-197827dfa891" style = "max-width: 100%;"></img>',
+        qS: '',
+        img: '',
+        aud: '',
+        options: [
+          '마스크입니다.',
+          '테이프입니다.',
+          '주머니입니다. ',
+          '스티커입니다.'
+        ],
+        answer: '테이프입니다.'
+      },
+
+      {
+        qH: ' [15-16] 다음 그림을 보고 맞는 단어나 문장을 고르십시오.',
+        q: '16.<img src="https://firebasestorage.googleapis.com/v0/b/eps-online-practice.appspot.com/o/DevPractice2%2F16.webp?alt=media&token=bd5f49c6-7e20-4720-a5bd-0bc207485761" style = "max-width: 100%;"></img>',
+        qS: '',
+        img: '',
+        aud: '',
+        options: [
+          '넥타이를 고르고 있습니다.',
+          '양복 윗옷을 입고 있습니다.',
+          '손에 장갑을 끼고 있습니다.',
+          '옷걸이에 옷을 걸고 있습니다.'
+        ],
+        answer: '테이프입니다.'
+      },
+
+      {
+        qH: '[17-20] 빈칸에 들어갈 가장 알맞은 것을 고르십시오.',
+        q: '17 . 도로나 공원에 _______________을/를 버리면 안 됩니다. 공공장소를 깨끗이 사용해야 합니다.',
+        qS: '',
+        img: '',
+        aud: '',
+        options: [
+          '지갑 ',
+          ' 사진',
+          ' 자동차 ',
+          '쓰레기'
+        ],
+        answer: '쓰레기'
+      },
+
+      {
+        qH: '[17-20] 빈칸에 들어갈 가장 알맞은 것을 고르십시오.',
+        q: '18. 여기는 교통 _________가 많이 나는 곳입니다. 조심해서 운전하십시오.',
+        qS: '',
+        img: '',
+        aud: '',
+        options: [
+          '신호',
+          '지도',
+          '사고',
+          '주차'
+        ],
+        answer: '사고'
+      },
+
+      {
+        qH: '[17-20] 빈칸에 들어갈 가장 알맞은 것을 고르십시오.',
+        q: '19. ________에 늦거나 지키지 못할 때는 미리 전화를 해야 합니다.',
+        qS: '',
+        img: '',
+        aud: '',
+        options: [
+          '선물',
+          '안내',
+          '약속',
+          '음식'
+        ],
+        answer: '약속'
+      },
+
+      {
+        qH: '[17-20] 빈칸에 들어갈 가장 알맞은 것을 고르십시오.',
+        q: '20. 저희 할머니는_________이/가 많으시지만 매일 운동을 하셔서 건강하십니다.',
+        qS: '',
+        img: '',
+        aud: '',
+        options: [
+          '댁',
+          '성함',
+          '연세',
+          '생신'
+        ],
+        answer: '연세'
+      },
     ];
 
     let question_count = 0;
     let point = 0;
-    let qNo = 1;
 
     function next() {
 
@@ -334,15 +569,12 @@
 
         // sessionStorage.setItem('points', point);
       }
-
       if (question_count == questions.length - 1) {
 
         //sessionStorage.setItem('time', `${minutes} Minutess and ${seconds} Seconds.`)
         clearInterval(myTime);
         //location.href = "00score.html";
         openPopUp();
-
-
       }
 
       question_count++;
@@ -364,8 +596,6 @@
       location.href = "index.html";
     });
 
-
-
     function show(count) {
 
       let qHead = document.getElementById("questionHead");
@@ -380,10 +610,6 @@
       let img = document.getElementById("url");
       img.innerHTML = questions[count].img;
 
-
-
-
-
       let opsns = document.getElementById("options");
       opsns.innerHTML = `
       <ul class="option_group">
@@ -394,11 +620,7 @@
       </ul>
       
       `;
-
-
-
       toggleActive();
-
     }
     function toggleActive() {
       let option = document.querySelectorAll("li.option");
@@ -414,9 +636,6 @@
         }
       }
     }
-
-
-
   </script>
 
 </body>
