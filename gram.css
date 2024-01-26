@@ -1,0 +1,131 @@
+:root {
+
+  --strFontFace: Geneva, Arial, sans-serif;
+  --strFontSize: medium;
+  --strTextColor: #000000;
+  --strTitleColor: #000000;
+  --strFuncLightColor: #ffffff;
+  --strFuncShadeColor: #7f7f7f;
+  --strLinkColor: #0000FF;
+  --strVLinkColor: #0000CC;
+  --strNavBarColor: #000000;
+  --strNavLightColor: #7f7f7f;
+  --strNavShadeColor: #000000;
+  --strNavTextColor: #ffffff;
+  --strPageBGColor: #C0C0C0;
+  --strExBGColor: #FFFFFF;
+  --strLightWhiteColor: #f3faff;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: var(--strFontFace);
+  background-color: var(--strPageBGColor);
+  color: var(--strTextColor);
+  font-size: var(--strFontSize);
+  padding: 0.001em;
+  display: inherit;
+}
+
+
+
+
+
+div.ExerciseContainer
+{
+  background-color: var(--strExBGColor);
+
+  color: var(--strTextColor);
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--strTextColor);
+  margin-bottom: 1px;
+  position: inherit;
+}
+
+div.ReadingContainer,
+div.ExerciseContainer {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+
+table {
+  border: .5px solid black;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: center;
+  border: .3px solid black;
+  border-collapse: collapse;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 12px;
+}
+.grammer{
+  padding-left: 16px;
+  padding-top: 24px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+
+.grammer h3 {
+  color: #2d5ece;
+  font-size: 16px;
+  font-weight: 200;
+  height: 10px;
+}
+
+.grammer h4 {
+  color: #3d5b99;
+  font-size: 14px;
+  font-weight: 200;
+  height: 8px;
+}
+p{
+  font-size: 14px;
+}
+
+.indent {
+  text-indent: 20px;
+}
+
+th {
+  background-color: rgb(94, 94, 94);
+  color: rgb(255, 255, 255)
+  
+}
+
+th,
+td {
+  padding: 4px
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2
+}
+
+@media only screen and (max-width: 480px) {
+  /* horizontal scrollbar for tables if mobile screen */
+  .tablemobile {
+      overflow-x: auto;
+      display: block;
+
+  }
+}
+
