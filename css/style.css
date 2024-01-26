@@ -42,6 +42,14 @@ section {
     padding-bottom: 30px;
 }
 
+.banner {
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  z-index: 99;
+}
 .section_title p {
     padding-bottom: 0;
     font-family: 'Open Sans', sans-serif;
