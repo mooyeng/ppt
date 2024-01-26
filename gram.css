@@ -38,6 +38,7 @@ body {
   left: 0;
   right: 0;
   height: 50px;
+  align-items: center;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
