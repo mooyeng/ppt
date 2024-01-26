@@ -32,7 +32,7 @@ body {
   display: inherit;
 }
 
-.b_main {
+.banner_container {
   display: flex;
   justify-content: center;
 }
@@ -43,6 +43,7 @@ body {
   left: 0;
   right: 0;
   height: 50px;
+  margin: 0 auto;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
