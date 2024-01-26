@@ -48,6 +48,8 @@ section {
   left: 0;
   right: 0;
   height: 50px;
+    display: flex;
+    flex-wrap: wrap;
     align-content: center;
   z-index: 99;
 }
