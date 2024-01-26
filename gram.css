@@ -32,23 +32,27 @@ body {
   display: inherit;
 }
 
+.b_main {
+  display: flex;
+  justify-content: center;
+}
+
 .banner {
-    position: fixed;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   height: 50px;
   align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
- 
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+
 }
 
 
 
-div.ExerciseContainer
-{
+div.ExerciseContainer {
   background-color: var(--strExBGColor);
 
   color: var(--strTextColor);
@@ -88,7 +92,8 @@ td {
   overflow-wrap: break-word;
   font-size: 12px;
 }
-.grammer{
+
+.grammer {
   padding-left: 16px;
   padding-top: 24px;
   padding-right: 16px;
@@ -108,7 +113,8 @@ td {
   font-weight: 200;
   height: 8px;
 }
-p{
+
+p {
   font-size: 14px;
 }
 
@@ -119,7 +125,6 @@ p{
 th {
   background-color: rgb(94, 94, 94);
   color: rgb(255, 255, 255)
-  
 }
 
 th,
@@ -132,11 +137,11 @@ tr:nth-child(odd) {
 }
 
 @media only screen and (max-width: 480px) {
+
   /* horizontal scrollbar for tables if mobile screen */
   .tablemobile {
-      overflow-x: auto;
-      display: block;
+    overflow-x: auto;
+    display: block;
 
   }
 }
-
