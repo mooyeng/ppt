@@ -48,7 +48,7 @@ section {
   left: 0;
   right: 0;
   height: 50px;
-    align-items: center;
+    align-content: center;
   z-index: 99;
 }
 .section_title p {
