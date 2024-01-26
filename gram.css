@@ -38,10 +38,16 @@ body {
 }
 
 .banner {
-  position: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 50px;
   margin: 0 auto;
-  
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 
 }
 
