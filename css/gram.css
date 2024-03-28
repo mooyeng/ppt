@@ -23,6 +23,8 @@ html {
 }
 
 
+
+
 body {
   font-family: var(--strFontFace);
   background-color: var(--strPageBGColor);
@@ -30,6 +32,16 @@ body {
   font-size: var(--strFontSize);
   padding: 0.001em;
   display: inherit;
+}
+
+
+.prevent-select {
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  user-select: none;
+  /* Standard syntax */
 }
 
 .banner_container {
