@@ -76,6 +76,7 @@ table {
   border: .5px solid black;
   border-collapse: collapse;
   table-layout: fixed;
+  width: 100vh;
   margin-left: 5px;
   margin-right: 5px;
 
