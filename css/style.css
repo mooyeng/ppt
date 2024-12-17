@@ -723,6 +723,10 @@ tr:nth-child(odd) {
     height: 100vh;
     overflow-y: scroll;
 }
+.myLeft {
+    height: 60vh;
+    overflow-y: scroll;
+}
 
 
 /**Back to top section end**/
