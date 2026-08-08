@@ -4,6 +4,7 @@
 
 html {
     scroll-behavior: smooth;
+
 }
 
 * {
@@ -42,6 +43,17 @@ section {
     padding-bottom: 30px;
 }
 
+.banner {
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  z-index: 99;
+}
 .section_title p {
     padding-bottom: 0;
     font-family: 'Open Sans', sans-serif;
@@ -710,6 +722,10 @@ tr:nth-child(odd) {
 .left {
 
     height: 100vh;
+    overflow-y: scroll;
+}
+.myLeft {
+    height: 60vh;
     overflow-y: scroll;
 }
 
